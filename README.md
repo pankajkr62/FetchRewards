@@ -23,7 +23,7 @@ Note: I am running this application at port 8080. Please make sure that port 808
 
 You can either use PostMan or cURL to make API calls to the web application. Under "credit/src/main/resources', I have given 
 'fetchrewards.postman_collection.json' file for directly import API calls in PostMan. For cURL, I have given terminal commands
-in 'curl_commands.txt' for API calls. Please note that I have formed these API calls as per the coding exercise document. 
+in 'curl_commands.txt' for API calls. Please note that I have formed these API calls as per examples in the coding exercise document. 
 
 #### cURL ( Easier )
 1. After starting application, open a new terminal. 
