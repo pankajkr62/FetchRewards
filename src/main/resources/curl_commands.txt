@@ -1,0 +1,60 @@
+Adding transactions 
+=====================
+
+curl --location --request POST 'http://localhost:8080/credit/addTransaction' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "payer": "DANNON",
+    "points": 300,
+    "timestamp": "2022-10-31T10:00:00Z"
+}
+'
+
+curl --location --request POST 'http://localhost:8080/credit/addTransaction' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "payer": "UNILEVER",
+    "points": 200,
+    "timestamp": "2022-10-31T11:00:00Z"
+}'
+
+curl --location --request POST 'http://localhost:8080/credit/addTransaction' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "payer": "DANNON",
+    "points": -200,
+    "timestamp": "2022-10-31T15:00:00Z"
+}'
+
+curl --location --request POST 'http://localhost:8080/credit/addTransaction' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "payer": "MILLER COORS",
+    "points": 10000,
+    "timestamp": "2022-11-01T14:00:00Z"
+}'
+
+curl --location --request POST 'http://localhost:8080/credit/addTransaction' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "payer": "DANNON",
+    "points": 1000,
+    "timestamp": "2022-11-02T14:00:00Z"
+}'
+
+
+
+Spend Points Request
+=====================
+
+curl --location --request POST 'http://localhost:8080/credit/spendPoints?points=200' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "points": 5000
+}'
+
+
+Get Balance Request
+====================
+
+curl --location --request GET 'http://localhost:8080/credit/getBalance'

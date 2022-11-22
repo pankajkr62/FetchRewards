@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "1bedf2b7-7dbb-4873-93cf-3cf381098d00",
+		"name": "fetchrewards",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24470690"
+	},
+	"item": [
+		{
+			"name": "Transaction1 Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"payer\": \"DANNON\",\n    \"points\": 300,\n    \"timestamp\": \"2022-10-31T10:00:00Z\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit/addTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"addTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction2 Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"payer\": \"UNILEVER\",\n    \"points\": 200,\n    \"timestamp\": \"2022-10-31T11:00:00Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit/addTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"addTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction3 Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"payer\": \"DANNON\",\n    \"points\": -200,\n    \"timestamp\": \"2022-10-31T15:00:00Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit/addTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"addTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction4 Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"payer\": \"MILLER COORS\",\n    \"points\": 10000,\n    \"timestamp\": \"2022-11-01T14:00:00Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit/addTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"addTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction5 Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"payer\": \"DANNON\",\n    \"points\": 1000,\n    \"timestamp\": \"2022-11-02T14:00:00Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit/addTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"addTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Spend Request 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"points\": 5000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit/spendPoints?points=200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"spendPoints"
+					],
+					"query": [
+						{
+							"key": "points",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBalanceRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/credit/getBalance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"getBalance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
