@@ -27,7 +27,7 @@ in 'curl_commands.txt' for API calls. Please note that I have formed these API c
 
 #### cURL ( Easier )
 1. After starting application, open a new terminal. 
-2. Copy each cURL command in the terminal and run it. 
+2. Copy each cURL command from 'curl_commands.txt' file ( in "credit/src/main/resources' folder )in the terminal and run it. 
 3. You should see the api response in the terminal itself just after running cURL command.
 
 
@@ -35,7 +35,7 @@ in 'curl_commands.txt' for API calls. Please note that I have formed these API c
 
 1. Please install PostManAgent on your local PC. 
 2. Open PostManAgent on PC and PostMan Web Portal on your browser. 
-3. On PostMan Web portal, import api calls using given 'fetchrewards.postman_collection.json' in your workspace. 
+3. On PostMan Web portal, import api calls using given 'fetchrewards.postman_collection.json' ( in "credit/src/main/resources' folder ) in your workspace. 
 4. You can see the api responses in the PostMan Web portal too. 
 
 
