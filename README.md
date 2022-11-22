@@ -5,7 +5,7 @@ This web application is developed as a part of Fetch Rewards Coding Exercise.
 
 ## Prerequisite Installation
 Please install these before running the application
-1. Java ( version used : openjdk-18.0.2.1 )
+1. Java ( version used : 11 )
 2. Maven ( version used : 3.8.6 )
 
 ## How to Run 
