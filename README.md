@@ -70,10 +70,9 @@ In my Dao, I also maintaining a balance map which contains the overall balance o
 6. Transaction are sorted as per timestamp. For same timestamp, insertion order is followed. 
 
 ## Improvements
-
-1. Faster processing of transactions if we store indexes of transactions with negative and positive points per user. Can use a HashMap. 
-2. Proper Unit Testing can be done instead of manual testing.
-3. Using persistent datastore to store transactions in order to achieve real world application. 
+1. Can use other data structures like LinkedList with some modifications for faster processing .  
+2. Using persistent datastore to store transactions in order to achieve real world application. 
+3. Proper Unit Testing can be done instead of manual testing. 
 
 
 
